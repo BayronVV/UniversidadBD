@@ -37,4 +37,29 @@ public class Servicios {
     
     }
     
+    public void ActualizarD(Docente d){
+    
+        try{
+        
+            DocenteServicios ds = new DocenteServicios();
+            ds.actualizar(Conexion.obtener(), d);
+        }
+        catch(Exception e){
+        
+        }
+    
+    }
+    
+    public void Buscard(Docente d){
+    
+        try{
+        
+            DocenteServicios ds = new DocenteServicios();
+            ds.buscar(Conexion.obtener(), d);
+        }
+        catch(Exception e){
+        
+        }
+    }
+    
 }
